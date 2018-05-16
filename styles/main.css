@@ -102,7 +102,11 @@ h2 {
 /*Footer*/
 
 footer {
-  margin: 3px 10px 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  margin: 3px -3px 15px;
   border: solid black;
   border-radius: 8px;
   -webkit-box-shadow: 6px 6px 18px -1px rgba(0, 0, 0, 0.75);
@@ -114,7 +118,18 @@ footer a {
   text-decoration: none;
 }
 
+.github {
+  margin-top: 5px;
+  width: 80px;
+}
+
+.twitter {
+  margin-top: 5px;
+  width: 80px;
+}
+
 h4 {
+  padding: 10px 50px 0;
   text-align: center;
   font-size: 1.2em;
   line-height: 48px;
@@ -150,6 +165,42 @@ h4 {
   }
   .project-link {
     font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .github {
+    width: 38px;
+    padding: 2px 0 1px 10px;
+  }
+
+  .twitter {
+    width: 38px;
+    padding: 30x 15px 1px 0;
+  }
+
+  h4 {
+    padding: 0;
+    margin: 0 12px 0;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .github {
+    width: 38px;
+    padding: 2px 0 1px 10px;
+  }
+
+  .twitter {
+    width: 38px;
+    padding: 30x 15px 1px 0;
+  }
+
+  h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
   }
 }
 
